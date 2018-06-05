@@ -1,7 +1,18 @@
+    /* Make sure padding and border are included in total width and height of the 
+       elements for building a responsive grid-view */
 * {
     box-sizing: border-box;
 }
 
+.clearfix:after { 
+    display: block;
+    content: "";
+    clear: both;
+    display: block; 
+    }    
+
+
+    /* Float header to the left and bring forward*/
 .header {
     float: left;
     z-index: 5;
@@ -9,6 +20,37 @@
     color: antiquewhite;
     text-align: center;
     padding: 15px;
+}
+
+.jumbotron {
+    z-index: 5;
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+    padding: 15px;
+}
+
+.column {
+    float: left;
+    padding: 15px;
+}
+.content {
+    font-size: 25px;
+    color: white;
+   /* text-shadow: 2px 2px 4px #000000; */
+    float: left;
+    width: 75%;
+    z-index: 5;
+}
+
+.menu {
+    float: left;
+    width: 25%
+}
+
+.menu li:hover {
+    float: left;
+    background-color: #0099cc;
 }
 
 body, html {
@@ -27,4 +69,9 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.crystal-image {
+    width: 100px;
+    height: 100px;
 }

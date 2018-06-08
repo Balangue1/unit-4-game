@@ -14,12 +14,27 @@
 
     /* Float header to the left and bring forward*/
 .header {
-    float: left;
+   /*  float: left; */
     z-index: 5;
     background-color: black;
     color: antiquewhite;
     text-align: center;
     padding: 15px;
+}
+
+.instruction {
+    height: 50%;
+ /*   width: 50%; */
+    opacity: 0.65;
+    overflow-y: auto;
+    filter: alpha(opacity=65);
+    font-size: 20px;
+    float: left;
+    z-index: 5;
+    background-color: black;
+    color: whitesmoke;
+    text-align: left;
+    padding: 30px;
 }
 
 .jumbotron {
@@ -63,7 +78,7 @@ body, html {
     /*The background image used*/
     background-image: url("../images/PurpleCrystal.jpg");
     /* Full height */
-    height: 100%;
+    height: 75%;
 
     /* Center and scale image nicely */
     background-position: center;
@@ -72,6 +87,6 @@ body, html {
 }
 
 .crystal-image {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
